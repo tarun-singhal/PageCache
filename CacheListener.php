@@ -63,7 +63,7 @@ class CacheListener extends AbstractListenerAggregate
             if ($data !== null) {
                 $response = $event->getResponse();
                 $response->setContent($data);
-                // return $response; //used to render data directly without instantiate of controllers
+                return $response; //used to render data directly without instantiate of controllers
             }
         }
     }
